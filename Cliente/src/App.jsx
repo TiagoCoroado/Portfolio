@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import "./i18n";
 import { NavBar } from "./components/NavBar";
-import {Herofrom "./components/Hero";
+import { Hero } from "./components/Hero"; 
 
 function App() {
   const { t } = useTranslation();
