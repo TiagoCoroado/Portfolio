@@ -7,6 +7,7 @@ import LanguageSwitcher from "./components/LanguageSwitcher";
 import "./i18n";
 import { NavBar } from "./components/NavBar";
 import { Hero } from "./components/Hero"; 
+import { Projectos } from "./components/Projectos";
 
 function App() {
   const { t } = useTranslation();
@@ -14,8 +15,8 @@ function App() {
     <>
     
       <NavBar />
-      <LanguageSwitcher />
       <Hero />
+      <Projectos />
       
     </>
   );
