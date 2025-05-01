@@ -5,32 +5,54 @@ export function Projectos() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="container" style={{ margin: "0x" }}>
-        <div className="flex w-full flex-col">
-          <div className="divider divider-center">Projetos</div>
-        </div>
-        <div className="flex w-full flex-col lg:flex-row">
-          <div className="indicator">
-            <div className="indicator-item indicator-bottom">
-              <button className="btn btn-primary">Apply</button>
-            </div>
-            <div className="card border-base-300 border shadow-sm">
-              <div className="card-body">
-                <h2 className="card-title">Job Title</h2>
-                <p>Rerum reiciendis beatae tenetur excepturi</p>
-              </div>
+      <div className="flex w-full flex-col">
+        <div className="divider divider-center">Projetos</div>
+      </div>
+      <div className="columns-3 p-10 gap-5">
+        <div className="card lg:card-side bg-base-100 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
+              alt="Album"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">New album is released!</h2>
+            <p>Click the button to listen on Spotiwhy app.</p>
+            <div className="card-actions justify-end">
+              <button className="btn btn-primary">Listen</button>
             </div>
           </div>
-          <div className="divider lg:divider-horizontal">OR</div>
-          <div className="indicator ">
-            <div className="indicator-item indicator-bottom ">
-              <button className="btn btn-primary">Apply</button>
+        </div>
+        <div className="card lg:card-side bg-base-100 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
+              alt="Album"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">New album is released!</h2>
+            <p>Click the button to listen on Spotiwhy app.</p>
+            <div className="card-actions justify-end">
+              <button className="btn btn-primary">GitHub Repo</button>
+              <button className="btn btn-primary">Images</button>
             </div>
-            <div className="card border-base-300 border shadow-sm">
-              <div className="card-body">
-                <h2 className="card-title">Job Title</h2>
-                <p>Rerum reiciendis beatae tenetur excepturi</p>
-              </div>
+          </div>
+        </div>
+        <div className="card lg:card-side bg-base-100 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
+              alt="Album"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">New album is released!</h2>
+            <p>Click the button to listen on Spotiwhy app.</p>
+            <div className="card-actions justify-end ">
+              <button className="btn btn-primary">GitHub Repo</button>
+              <button className="btn btn-primary">Images</button>
             </div>
           </div>
         </div>

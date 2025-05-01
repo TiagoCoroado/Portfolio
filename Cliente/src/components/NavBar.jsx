@@ -3,47 +3,20 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export function NavBar() {
+  const { t } = useTranslation();
+
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm bg">
       <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-            <svg
-              xmlns=""
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              {" "}
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h7"
-              />{" "}
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-          >
-            <li>
-              <a>Homepage</a>
-            </li>
-            <li>
-              <a>Curriculum</a>
-            </li>
-          </ul>
-        </div>
       </div>
       <div className="navbar-center">
         <a
           className="btn btn-ghost text-xl"
           style={{
              // Fonte cursiva
-            letterSpacing: "0.3em", // Espaçamento entre letras
+            letterSpacing: "0.2em", // Espaçamento entre letras
             fontSize: "2rem", // Tamanho maior
+            
           }}
         >
           Tiago Coroado
@@ -54,7 +27,7 @@ export function NavBar() {
         <div>
           <label className="swap swap-rotate">
             {/* this hidden checkbox controls the state */}
-            <input type="checkbox" className="theme-controller" value="dark" />
+            <input type="checkbox" className="theme-controller" value="abyss" />
 
             {/* sun icon */}
             <svg
