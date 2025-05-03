@@ -13,14 +13,14 @@ export default function Carousel() {
       <div className="flex w-full flex-col">
         <div className="divider divider-center">Certificados</div>
       </div>
-      <div className="flex w-full flex-col p-5">
-        <div className="carousel w-auto h-[100vh]">
+      <div className="flex p-5 justify-center items-center">
+        <div className="carousel w-[100vh] h-[80vh]">
           {/* Imagem 1 */}
           <div id="slide1" className="carousel-item relative w-full">
             <img
               src={certificado1}
               alt="Imagem 1"
-              className="w-full h-full object-cover"
+              className="w-full h-full"
             />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide3" className="btn btn-circle">
@@ -37,7 +37,7 @@ export default function Carousel() {
             <img
               src={certificado2}
               alt="Imagem 2"
-              className="w-full h-full object-cover"
+              className="w-full h-full"
             />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" className="btn btn-circle">
@@ -54,7 +54,7 @@ export default function Carousel() {
             <img
               src={certificado3}
               alt="Imagem 3"
-              className="w-full h-full object-cover"
+              className="w-full h-full"
             />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide2" className="btn btn-circle">
@@ -71,7 +71,7 @@ export default function Carousel() {
             <img
               src={certificado4}
               alt="Imagem 2"
-              className="w-full h-full object-cover"
+              className="w-full h-full"
             />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide3" className="btn btn-circle">

@@ -17,11 +17,15 @@ export function Projectos() {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">New album is released!</h2>
-            <p>Click the button to listen on Spotiwhy app.</p>
+            <h2 className="card-title">Website Pessoal</h2>
+            <p>Site desenvolvido em HTML5, CSS3 e Javascript.</p>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Listen</button>
-            </div>
+              <button
+                className="btn btn-primary"
+                onClick={() => window.open("https://margaridaromanunes.pt/", "_blank")}
+              >
+                Abrir Site
+              </button>           </div>
           </div>
         </div>
         <div className="card lg:card-side bg-base-100 shadow-sm">
