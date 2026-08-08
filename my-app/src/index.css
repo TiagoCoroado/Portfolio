@@ -1,0 +1,214 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FAF7F0;
+    color: #1E1B18;
+  }
+
+  h1, h2, h3, .font-grotesk {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .font-bungee {
+    font-family: 'Bungee', cursive;
+  }
+
+  .font-fredoka {
+    font-family: 'Fredoka', sans-serif;
+  }
+}
+
+/* Hard Memphis Shadow Utilities */
+.shadow-memphis-xs {
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.shadow-memphis-sm {
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.shadow-memphis {
+  box-shadow: 5px 5px 0px #000000;
+}
+
+.shadow-memphis-lg {
+  box-shadow: 8px 8px 0px #000000;
+}
+
+.shadow-memphis-xl {
+  box-shadow: 12px 12px 0px #000000;
+}
+
+.shadow-memphis-violet {
+  box-shadow: 6px 6px 0px #8B3DFF;
+}
+
+.shadow-memphis-pink {
+  box-shadow: 6px 6px 0px #FF2A85;
+}
+
+.shadow-memphis-cyan {
+  box-shadow: 6px 6px 0px #00F0FF;
+}
+
+.shadow-memphis-yellow {
+  box-shadow: 6px 6px 0px #FFE600;
+}
+
+.border-3 {
+  border-width: 3px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+/* Background Patterns */
+.bg-memphis-dots {
+  background-image: radial-gradient(#1e1b18 20%, transparent 20%);
+  background-position: 0 0;
+  background-size: 16px 16px;
+}
+
+.bg-memphis-dots-pink {
+  background-image: radial-gradient(#FF2A85 25%, transparent 25%);
+  background-position: 0 0;
+  background-size: 14px 14px;
+}
+
+.bg-memphis-stripes {
+  background: repeating-linear-gradient(
+    45deg,
+    #1e1b18,
+    #1e1b18 8px,
+    transparent 8px,
+    transparent 16px
+  );
+}
+
+.bg-memphis-stripes-yellow {
+  background: repeating-linear-gradient(
+    -45deg,
+    #FFE600,
+    #FFE600 10px,
+    #ffffff 10px,
+    #ffffff 20px
+  );
+}
+
+.bg-memphis-grid {
+  background-size: 32px 32px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+}
+
+/* Memphis Keyframe Animations */
+@keyframes drift {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  50% {
+    transform: translate(15px, -20px) rotate(180deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(360deg);
+  }
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float-bounce {
+  0%, 100% {
+    transform: translateY(0px) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+}
+
+@keyframes pulse-pop {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-drift-1 {
+  animation: drift 14s ease-in-out infinite;
+}
+
+.animate-drift-2 {
+  animation: drift 18s ease-in-out infinite reverse;
+}
+
+.animate-drift-3 {
+  animation: drift 22s ease-in-out infinite 2s;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-slow 25s linear infinite reverse;
+}
+
+.animate-float {
+  animation: float-bounce 4s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 2.5s ease-in-out infinite;
+}
+
+.animate-pulse-pop {
+  animation: pulse-pop 3s ease-in-out infinite;
+}
+
+/* Marker Underline Highlight Effect */
+.marker-highlight-yellow {
+  background: linear-gradient(180deg, transparent 60%, #FFE600 60%);
+}
+
+.marker-highlight-pink {
+  background: linear-gradient(180deg, transparent 55%, #FF2A85 55%);
+}
+
+.marker-highlight-cyan {
+  background: linear-gradient(180deg, transparent 60%, #00F0FF 60%);
+}
+
+/* Button Push Interactive Effect */
+.btn-memphis {
+  transition: all 0.12s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-memphis:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0px #000000;
+}
+
+.btn-memphis:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #000000;
+}
